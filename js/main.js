@@ -212,32 +212,29 @@
      CONTACT FORM
      ============================================ */
   function initContactForm() {
-    var form = document.getElementById('contact-form');
     var status = document.getElementById('form-status');
 
-    if (!form) return;
-
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      // Simulate form submission
-      var btn = form.querySelector('button[type="submit"]');
-      var originalText = btn.innerHTML;
-      btn.innerHTML = 'Sending...';
-      btn.disabled = true;
-
-      setTimeout(function () {
+    // Show success message if redirected back after form submission
+    if (window.location.search.indexOf('sent=true') !== -1) {
+      if (status) {
         status.textContent = 'Message sent successfully. I will get back to you soon.';
         status.className = 'form-status success';
-        btn.innerHTML = originalText;
-        btn.disabled = false;
-        form.reset();
-
+        // Scroll to contact section
+        var contact = document.getElementById('contact');
+        if (contact) {
+          setTimeout(function () {
+            contact.scrollIntoView({ behavior: 'smooth' });
+          }, 300);
+        }
+        // Clean URL
+        if (window.history.replaceState) {
+          window.history.replaceState(null, '', window.location.pathname);
+        }
         setTimeout(function () {
           status.className = 'form-status';
         }, 5000);
-      }, 1500);
-    });
+      }
+    }
   }
 
   /* ============================================
