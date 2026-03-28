@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "leaking-pii-at-scale",
+    "title": "Leaking PII at Scale: How Third Parties Can Unintentionally Put Your Data at Risk",
+    "date": "2025-01-17",
+    "category": "Bug Bounty",
+    "tags": ["PII Leakage", "Third-Party Risk", "Misconfiguration"],
+    "excerpt": "How I discovered a misconfiguration exposing personally identifiable information at scale through third-party integrations.",
+    "medium_url": "https://medium.com/@omarahmed_13016/leaking-pii-at-scale-how-third-parties-can-unintentionally-put-your-data-at-risk-6101fcb3d5e0"
+  },
+  {
+    "slug": "exposing-hidden-dos-techniques",
+    "title": "Exposing Hidden DOS Techniques Laying in Plain Sight",
+    "date": "2024-11-07",
+    "category": "Bug Bounty",
+    "tags": ["DoS", "Application Logic", "Hidden Vectors"],
+    "excerpt": "Uncovering denial-of-service attack vectors hiding in everyday application functionality that most testers overlook.",
+    "medium_url": "https://medium.com/@omarahmed_13016/exposing-hidden-dos-techniques-laying-in-plain-sight-29965ab1d53b"
+  },
+  {
+    "slug": "iis-welcome-page-to-lfi",
+    "title": "IIS Welcome Page to Source Code Review to LFI",
+    "date": "2024-08-31",
+    "category": "Bug Bounty",
+    "tags": ["IIS", "Source Code Review", "LFI"],
+    "excerpt": "How a default IIS welcome page led to source code review and ultimately a Local File Inclusion vulnerability.",
+    "medium_url": "https://medium.com/@omarahmed_13016/iis-welcome-page-to-source-code-review-to-lfi-23ec581049f5"
+  },
+  {
+    "slug": "great-chain-of-duplicates",
+    "title": "The Great Chain of Duplicates: Utilizing Javascript and Logic in Bug Bounty",
+    "date": "2023-11-04",
+    "category": "Bug Bounty",
+    "tags": ["JavaScript Analysis", "Logic Bugs", "Vulnerability Chaining"],
+    "excerpt": "Leveraging JavaScript analysis and logical thinking to discover unique vulnerabilities in bug bounty programs.",
+    "medium_url": "https://medium.com/@omarahmed_13016/the-great-chain-of-duplicates-utilizing-javascript-and-logic-in-the-bug-bounty-field-4758b6977fb3"
+  },
+  {
+    "slug": "account-takeover-in-js-files-part2",
+    "title": "Account Takeover Hidden in Javascript Files Plus Some Extra Work",
+    "date": "2023-08-29",
+    "category": "Bug Bounty",
+    "tags": ["Account Takeover", "JavaScript", "Broken Access Control"],
+    "excerpt": "A follow-up collaboration diving deeper into the broken access control vulnerability found in JavaScript files.",
+    "medium_url": "https://medium.com/@omarahmed_13016/%D9%90account-takeover-hidden-in-javascript-files-plus-some-extra-work-my-type-a2eb8208f049"
+  },
+  {
+    "slug": "account-takeover-in-js-files",
+    "title": "Account Takeover Hidden in JavaScript Files",
+    "date": "2023-07-04",
+    "category": "Bug Bounty",
+    "tags": ["Account Takeover", "JavaScript", "Broken Access Control"],
+    "excerpt": "Finding a broken access control vulnerability hidden in JavaScript files enabling full account takeover on a private program.",
+    "medium_url": "https://medium.com/@omarahmed_13016/account-takeover-hidden-in-javascript-files-3a7e3773304"
+  },
+  {
+    "slug": "graphql-path-traversal-pii",
+    "title": "GraphQL Path Traversal Leading to Disclosure of PII",
+    "date": "2023-11-04",
+    "category": "Write-up",
+    "tags": ["GraphQL", "Path Traversal", "PII Disclosure"],
+    "excerpt": "Discovered a path traversal vulnerability in a GraphQL endpoint that allowed access to restricted internal APIs and exposure of personally identifiable information.",
+    "medium_url": "https://medium.com/@omarahmed_13016/graphql-path-traversal-lead-to-disclosure-of-pii-38597b8446d4"
+  },
+  {
+    "slug": "idor-unpin-posts",
+    "title": "IDOR: Unpin Posts for Fun",
+    "date": "2023-06-13",
+    "category": "Write-up",
+    "tags": ["IDOR", "LinkedIn", "Authorization Bypass"],
+    "excerpt": "Exploited an Insecure Direct Object Reference on LinkedIn's bug bounty program that allowed unpinning any user's posts without authorization.",
+    "medium_url": "https://medium.com/@omarahmed_13016/idor-unpin-posts-for-fun-18f628eaef24"
+  }
+]

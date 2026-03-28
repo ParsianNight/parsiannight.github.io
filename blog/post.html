@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog post — Omar Abdelrazik">
+  <title>Loading... — Omar Abdelrazik</title>
+
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/blog.css">
+
+  <!-- Syntax highlighting -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" id="hljs-theme">
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="nav-header scrolled" id="nav-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="../" class="nav__logo" aria-label="Home">
+        <span class="nav__logo-bracket">[</span><span class="nav__logo-text">OA</span><span class="nav__logo-bracket">]</span>
+      </a>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu" role="menubar">
+        <li role="none"><a href="../#about" class="nav__link" role="menuitem">About</a></li>
+        <li role="none"><a href="../#stats" class="nav__link" role="menuitem">Stats</a></li>
+        <li role="none"><a href="../#hall-of-fame" class="nav__link" role="menuitem">Hall of Fame</a></li>
+        <li role="none"><a href="./" class="nav__link active" role="menuitem">Blog</a></li>
+        <li role="none"><a href="../#writeups" class="nav__link" role="menuitem">Write-ups</a></li>
+        <li role="none"><a href="../#skills" class="nav__link" role="menuitem">Skills</a></li>
+        <li role="none"><a href="../#contact" class="nav__link" role="menuitem">Contact</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">
+        <svg class="theme-toggle__icon theme-toggle__icon--moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="theme-toggle__icon theme-toggle__icon--sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===================== BLOG POST ===================== -->
+  <main class="blog-post-page">
+    <div class="container">
+      <a href="./" class="blog-back">&larr; Back to Blog</a>
+
+      <article class="blog-article" id="blog-article">
+        <header class="blog-article__header" id="blog-article-header">
+          <!-- Injected by JS: title, date, tags, category -->
+          <div class="blog-article__loading">Loading post...</div>
+        </header>
+        <div class="blog-article__body" id="blog-article-body">
+          <!-- Markdown content rendered here -->
+        </div>
+      </article>
+
+      <!-- Post navigation -->
+      <div class="blog-post-nav" id="blog-post-nav" style="display:none;">
+        <a href="#" class="blog-post-nav__link blog-post-nav__prev" id="prev-post">
+          <span class="blog-post-nav__label">&larr; Previous</span>
+          <span class="blog-post-nav__title" id="prev-post-title"></span>
+        </a>
+        <a href="#" class="blog-post-nav__link blog-post-nav__next" id="next-post">
+          <span class="blog-post-nav__label">Next &rarr;</span>
+          <span class="blog-post-nav__title" id="next-post-title"></span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__brand">
+          <a href="../" class="nav__logo" aria-label="Home">
+            <span class="nav__logo-bracket">[</span><span class="nav__logo-text">OA</span><span class="nav__logo-bracket">]</span>
+          </a>
+          <p class="footer__tagline">Security Researcher & Content Creator</p>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; <span id="current-year"></span> Omar Abdelrazik. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Markdown parser & syntax highlighter -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/blog-post.js"></script>
+</body>
+</html>
