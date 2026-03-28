@@ -1041,9 +1041,6 @@ strong {
   gap: 2rem;
 }
 
-.skills__grid > .skills__category:last-child {
-  grid-column: 1 / -1;
-}
 
 .skills__category {
   background: var(--bg-card);
@@ -1341,10 +1338,6 @@ strong {
 
   .skills__grid {
     grid-template-columns: 1fr;
-  }
-
-  .skills__grid > .skills__category:last-child {
-    grid-column: auto;
   }
 }
 

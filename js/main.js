@@ -13,8 +13,6 @@
     initThemeToggle();
     initScrollReveal();
     initCounters();
-    initSkillBars();
-    initContentTabs();
     initContactForm();
     initCurrentYear();
     initActiveNavHighlight();
@@ -208,57 +206,6 @@
     }
 
     requestAnimationFrame(step);
-  }
-
-  /* ============================================
-     SKILL BARS
-     ============================================ */
-  function initSkillBars() {
-    var fills = document.querySelectorAll('.skill-bar__fill');
-
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          var width = entry.target.dataset.width;
-          entry.target.style.setProperty('--fill-width', width + '%');
-          entry.target.classList.add('animate');
-          entry.target.style.width = width + '%';
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.3
-    });
-
-    fills.forEach(function (fill) {
-      observer.observe(fill);
-    });
-  }
-
-  /* ============================================
-     CONTENT TABS
-     ============================================ */
-  function initContentTabs() {
-    var tabs = document.querySelectorAll('.content__tab');
-    var panels = document.querySelectorAll('.content__panel');
-
-    tabs.forEach(function (tab) {
-      tab.addEventListener('click', function () {
-        var target = this.dataset.tab;
-
-        // Update tabs
-        tabs.forEach(function (t) { t.classList.remove('content__tab--active'); });
-        this.classList.add('content__tab--active');
-
-        // Update panels
-        panels.forEach(function (p) {
-          p.classList.remove('content__panel--active');
-          if (p.dataset.panel === target) {
-            p.classList.add('content__panel--active');
-          }
-        });
-      });
-    });
   }
 
   /* ============================================
