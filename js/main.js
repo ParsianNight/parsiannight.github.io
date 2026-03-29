@@ -62,6 +62,7 @@
 
     // Smooth scroll for all anchor links
     document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+      if (anchor.closest('.blog-post-nav')) return;
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
