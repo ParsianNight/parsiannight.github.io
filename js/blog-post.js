@@ -62,6 +62,14 @@
 
     body.innerHTML = marked.parse(markdown);
 
+    // Fix image paths: markdown references images/ relative to posts/ dir
+    body.querySelectorAll('img').forEach(function (img) {
+      var src = img.getAttribute('src');
+      if (src && src.indexOf('images/') === 0) {
+        img.setAttribute('src', 'posts/' + src);
+      }
+    });
+
     // Apply syntax highlighting to any remaining code blocks
     body.querySelectorAll('pre code').forEach(function (block) {
       hljs.highlightElement(block);
