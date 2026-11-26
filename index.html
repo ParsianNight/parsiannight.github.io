@@ -33,18 +33,29 @@
         <h1 id="name">Omar<br>Abdelrazik</h1>
         <p class="lede">Security engineer at Meta in London. Five years of breaking web apps, now testing what AI models can do in web security and where they escape.</p>
         <div class="actions">
-          <a class="btn" href="assets/Omar_Abdelrazik_CV.pdf">Download CV</a>
+          <a class="btn" href="#contact">Get in touch</a>
           <a class="quiet" href="blog/">Read the write-ups</a>
         </div>
       </div>
 
-      <div class="exchange" role="img" aria-label="An HTTP request for /whoami returning Omar's profile: Security Engineer at Meta, top 400 on HackerOne, 250+ valid vulnerabilities, 52+ companies, 2nd place in the HackerOne World Cup.">
-<pre class="req" aria-hidden="true"><span class="m">GET</span> /whoami HTTP/2
+      <div class="exchange" id="console">
+        <div class="exchange__routes" role="group" aria-label="Send a request">
+          <button type="button" data-path="/whoami" aria-pressed="true">/whoami</button>
+          <button type="button" data-path="/work" aria-pressed="false">/work</button>
+          <button type="button" data-path="/findings" aria-pressed="false">/findings</button>
+          <button type="button" data-path="/cv" aria-pressed="false">/cv</button>
+        </div>
+<pre class="req"><span class="m">GET</span> <span id="req-path">/whoami</span> HTTP/2
 <span class="d">Host:</span> parsiannight.github.io
 <span class="d">Accept:</span> application/json</pre>
-<pre aria-hidden="true"><span class="status">HTTP/2 <span class="ok">200 OK</span></span><span class="body">{
+<pre class="res" aria-live="polite"><span class="status" id="res-status">HTTP/2 <span class="ok">200 OK</span></span><span class="time d" id="res-time"></span>
+<span class="body unroll" id="res-body">{
   <span class="k">"role"</span>: <span class="s">"Security Engineer, Meta"</span>,
-  <span class="k">"focus"</span>: [<span class="s">"AI security"</span>, <span class="s">"web"</span>, <span class="s">"SAST"</span>],
+  <span class="k">"focus"</span>: [
+    <span class="s">"AI security"</span>,
+    <span class="s">"web"</span>,
+    <span class="s">"SAST"</span>
+  ],
   <span class="k">"hackerone"</span>: {
     <span class="k">"rank"</span>: <span class="s">"top 400"</span>,
     <span class="k">"valid_reports"</span>: <span class="s">"250+"</span>,
@@ -52,6 +63,7 @@
     <span class="k">"world_cup"</span>: <span class="s">"2nd place"</span>
   }
 }</span></pre>
+        <p class="exchange__hint">Pick an endpoint to send a request.</p>
       </div>
     </section>
 
@@ -60,7 +72,7 @@
       <ol class="timeline" reversed>
         <li class="role current">
           <span class="role__when">May 2026 – now</span>
-          <h3>Web Pod Lead, Applied AI</h3>
+          <h3>Security Engineer, Applied AI</h3>
           <p class="role__team">Meta</p>
           <ul>
             <li>Assess models' web security capabilities and design the tasks that measure them.</li>
@@ -130,6 +142,7 @@
       <h2 id="contact-h">Contact</h2>
       <div>
         <p class="contact-line"><a href="mailto:spaceboy20@wearehackerone.com">spaceboy20@wearehackerone.com</a></p>
+        <p class="contact-note">For my CV, roles or collaboration, email me and I'll reply directly. <a href="mailto:spaceboy20@wearehackerone.com?subject=CV%20request">Request my CV</a></p>
         <ul class="elsewhere">
           <li><a href="https://www.linkedin.com/in/omarabdelrazek0/">LinkedIn</a></li>
           <li><a href="https://github.com/ParsianNight">GitHub</a></li>
@@ -143,6 +156,7 @@
 
   <footer>&copy; <span id="y">2026</span> Omar Abdelrazik</footer>
 </div>
+<script src="js/console.js"></script>
 <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>

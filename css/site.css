@@ -95,16 +95,37 @@ a:hover { text-decoration-thickness: 2px; }
 .exchange .ok { color: var(--panel-ok); font-weight: 500; }
 .exchange .k { color: var(--panel-key); }
 .exchange .s { color: var(--panel-str); }
-.exchange .status { display: block; }
+.exchange .status { display: inline; }
 
-/* One orchestrated load: request appears, then the status, then the body unrolls */
+/* Endpoint picker: real buttons that send a request */
+.exchange__routes { display: flex; flex-wrap: wrap; gap: .4rem; padding: .85rem 1.1rem; border-bottom: 1px solid rgba(255,255,255,.08); }
+.exchange__routes button {
+  font: 500 .8rem/1 var(--mono); color: var(--panel-dim); background: transparent;
+  border: 1px solid rgba(255,255,255,.14); border-radius: 999px; padding: .45rem .8rem; cursor: pointer;
+  transition: color .15s, border-color .15s, background-color .15s;
+}
+.exchange__routes button:hover { color: var(--panel-ink); border-color: rgba(255,255,255,.35); }
+.exchange__routes button[aria-pressed="true"] { color: var(--panel); background: var(--panel-key); border-color: var(--panel-key); }
+.exchange__routes button:focus-visible { outline: 2px solid var(--panel-key); outline-offset: 2px; }
+.exchange .err { color: #ff8a80; font-weight: 500; }
+.exchange .time { float: right; }
+.exchange .res { min-height: 17.5em; }
+.exchange .body { display: block; }
+.exchange__hint { margin: 0; padding: .7rem 1.25rem; border-top: 1px solid rgba(255,255,255,.08); font-size: .75rem; color: var(--panel-dim); }
+.exchange.is-loading .status .d::after { content: ""; display: inline-block; width: .5em; height: 1em; margin-left: .3em; vertical-align: -.15em; background: var(--panel-dim); animation: blink 1s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+
+/* Each response unrolls top to bottom; the first one plays on page load */
 @media (prefers-reduced-motion: no-preference) {
+  .exchange .body.unroll { animation: reveal .7s steps(14, end) both; }
   .exchange .req { animation: show .5s ease-out .15s both; }
-  .exchange .status { animation: show .4s ease-out .9s both; }
-  .exchange .body { display: block; animation: reveal 1s steps(16, end) 1.25s both; }
+  #res-body.unroll { animation-delay: .1s; }
   @keyframes show { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
   @keyframes reveal { from { clip-path: inset(0 0 100% 0); } to { clip-path: inset(0 0 0 0); } }
 }
+
+/* Contact note */
+.contact-note { color: var(--ink-soft); margin: -.25rem 0 1.25rem; max-width: 36rem; }
 
 /* ---------- Sections ---------- */
 .block { display: grid; grid-template-columns: 13rem 1fr; gap: 2.5rem; padding: 3.5rem 0; border-top: 1px solid var(--rule); }
