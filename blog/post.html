@@ -10,34 +10,40 @@
     document.documentElement.setAttribute('data-theme',
       window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
   </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="../css/site.css">
   <link rel="stylesheet" id="hljs-theme" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
 </head>
 <body>
-<main class="wrap">
-  <div class="topbar">
+<div class="wrap">
+  <header class="topbar">
     <a class="home" href="../">Omar Abdelrazik</a>
-    <nav><a href="../assets/Omar_Abdelrazik_CV.pdf">CV</a><a href="./">Blog</a></nav>
-  </div>
-
-  <article id="blog-article">
-    <header id="blog-article-header"><div class="blog-article__loading">Loading post…</div></header>
-    <div class="blog-article__body" id="blog-article-body"></div>
-  </article>
-
-  <div class="blog-post-nav" id="blog-post-nav">
-    <a href="#" class="blog-post-nav__link" id="prev-post">
-      <span class="blog-post-nav__label">&larr; Previous</span>
-      <span id="prev-post-title"></span>
-    </a>
-    <a href="#" class="blog-post-nav__link blog-post-nav__next" id="next-post">
-      <span class="blog-post-nav__label">Next &rarr;</span>
-      <span id="next-post-title"></span>
-    </a>
-  </div>
-
+    <nav aria-label="Site">
+      <a href="../#work">Work</a>
+      <a href="./">Writing</a>
+      <a href="../#contact">Contact</a>
+    </nav>
+  </header>
+  <main class="post">
+    <article id="blog-article">
+      <header id="blog-article-header"><div class="blog-article__loading">Loading post…</div></header>
+      <div class="blog-article__body" id="blog-article-body"></div>
+    </article>
+    <nav class="blog-post-nav" id="blog-post-nav" aria-label="More posts">
+      <a href="#" class="blog-post-nav__link" id="prev-post">
+        <span class="blog-post-nav__label">Previous</span>
+        <span id="prev-post-title"></span>
+      </a>
+      <a href="#" class="blog-post-nav__link blog-post-nav__next" id="next-post">
+        <span class="blog-post-nav__label">Next</span>
+        <span id="next-post-title"></span>
+      </a>
+    </nav>
+  </main>
   <footer>&copy; Omar Abdelrazik</footer>
-</main>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 <script src="../js/blog-post.js?v=3"></script>

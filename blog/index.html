@@ -5,23 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog — Omar Abdelrazik</title>
   <meta name="description" content="Bug bounty write-ups and security research by Omar Abdelrazik.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="../css/site.css">
 </head>
 <body>
-<main class="wrap">
-  <div class="topbar">
+<div class="wrap">
+  <header class="topbar">
     <a class="home" href="../">Omar Abdelrazik</a>
-    <nav><a href="../assets/Omar_Abdelrazik_CV.pdf">CV</a><a href="./">Blog</a></nav>
-  </div>
-
-  <h1>Blog</h1>
-  <p class="role">Bug bounty write-ups and security research.</p>
-
-  <div id="blog-grid"></div>
-  <p id="blog-empty" style="display:none;">No posts yet.</p>
-
+    <nav aria-label="Site">
+      <a href="../#work">Work</a>
+      <a href="./" aria-current="page">Writing</a>
+      <a href="../#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <div class="page-head">
+      <h1>Writing</h1>
+      <p>Bug bounty write-ups: how each bug was found and why it mattered.</p>
+    </div>
+    <div id="blog-grid"></div>
+    <p id="blog-empty" style="display:none;">No posts yet.</p>
+  </main>
   <footer>&copy; Omar Abdelrazik</footer>
-</main>
+</div>
 <script src="../js/blog.js"></script>
 </body>
 </html>

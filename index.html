@@ -4,92 +4,145 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Omar Abdelrazik — Security Engineer</title>
-  <meta name="description" content="Omar Abdelrazik — Security Engineer at Meta working on AI security and static analysis. Top 400 on HackerOne, 250+ valid vulnerabilities across 52+ companies.">
+  <meta name="description" content="Omar Abdelrazik, Security Engineer at Meta working on AI security and static analysis. Top 400 on HackerOne, 250+ valid vulnerabilities across 52+ companies.">
   <meta property="og:title" content="Omar Abdelrazik — Security Engineer">
-  <meta property="og:description" content="Security Engineer at Meta. Offensive security, AI security and static analysis. Top 400 on HackerOne.">
+  <meta property="og:description" content="Security Engineer at Meta. Offensive web security, AI security and static analysis. Top 400 on HackerOne.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://parsiannight.github.io">
   <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-<main class="wrap">
+<div class="wrap">
 
-  <header class="intro">
-    <h1>Omar Abdelrazik</h1>
-    <p class="role">Security Engineer at Meta &middot; London</p>
-    <p>I break things to make them safer. At Meta I assess what AI models can do in web security, and before that I built static analysis and AI-assisted triage in Central Security.</p>
-    <p>I started out in bug bounty: 250+ valid vulnerabilities across 52+ companies, a top-400 rank on HackerOne, and 2nd place in the HackerOne World Cup.</p>
-    <div class="links">
-      <a href="assets/Omar_Abdelrazik_CV.pdf">CV</a>
-      <a href="https://www.linkedin.com/in/omarabdelrazek0/">LinkedIn</a>
-      <a href="https://github.com/ParsianNight">GitHub</a>
-      <a href="https://hackerone.com/spaceboy20">HackerOne</a>
-      <a href="https://x.com/spaceboy2O">X</a>
-      <a href="blog/">Blog</a>
-    </div>
+  <header class="topbar">
+    <a class="home" href="./">Omar Abdelrazik</a>
+    <nav aria-label="Site">
+      <a href="#work">Work</a>
+      <a href="blog/">Writing</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>Experience</h2>
+  <main>
+    <section class="hero" aria-labelledby="name">
+      <div>
+        <h1 id="name">Omar<br>Abdelrazik</h1>
+        <p class="lede">Security engineer at Meta in London. Five years of breaking web apps, now testing what AI models can do in web security and where they escape.</p>
+        <div class="actions">
+          <a class="btn" href="assets/Omar_Abdelrazik_CV.pdf">Download CV</a>
+          <a class="quiet" href="blog/">Read the write-ups</a>
+        </div>
+      </div>
 
-    <div class="job">
-      <div class="job-head"><strong>Meta — Web Pod Lead, Applied AI</strong><span class="when">May 2026 – now</span></div>
-      <ul>
-        <li>Assess models' web security capabilities and design the tasks that measure them.</li>
-        <li>Discovered two new classes of model escape and built detection for escape attempts.</li>
-        <li>Find, triage and fix security issues in Muse, Meta's personal AI agent.</li>
-      </ul>
-    </div>
+      <div class="exchange" role="img" aria-label="An HTTP request for /whoami returning Omar's profile: Security Engineer at Meta, top 400 on HackerOne, 250+ valid vulnerabilities, 52+ companies, 2nd place in the HackerOne World Cup.">
+<pre class="req" aria-hidden="true"><span class="m">GET</span> /whoami HTTP/2
+<span class="d">Host:</span> parsiannight.github.io
+<span class="d">Accept:</span> application/json</pre>
+<pre aria-hidden="true"><span class="status">HTTP/2 <span class="ok">200 OK</span></span><span class="body">{
+  <span class="k">"role"</span>: <span class="s">"Security Engineer, Meta"</span>,
+  <span class="k">"focus"</span>: [<span class="s">"AI security"</span>, <span class="s">"web"</span>, <span class="s">"SAST"</span>],
+  <span class="k">"hackerone"</span>: {
+    <span class="k">"rank"</span>: <span class="s">"top 400"</span>,
+    <span class="k">"valid_reports"</span>: <span class="s">"250+"</span>,
+    <span class="k">"companies"</span>: <span class="s">"52+"</span>,
+    <span class="k">"world_cup"</span>: <span class="s">"2nd place"</span>
+  }
+}</span></pre>
+      </div>
+    </section>
 
-    <div class="job">
-      <div class="job-head"><strong>Meta — Security Engineer, Central Security</strong><span class="when">Sep 2025 – May 2026</span></div>
-      <ul>
-        <li>Shipped static analysis rules covering 10+ vulnerability classes.</li>
-        <li>Automated triage of 2,000 SAST findings, saving two weeks of engineering time.</li>
-        <li>Raised accuracy of AI analysis over SAST findings from 50% to 85% for targeted vulnerability classes.</li>
-      </ul>
-    </div>
+    <section class="block" id="work" aria-labelledby="work-h">
+      <h2 id="work-h">Work</h2>
+      <ol class="timeline" reversed>
+        <li class="role current">
+          <span class="role__when">May 2026 – now</span>
+          <h3>Web Pod Lead, Applied AI</h3>
+          <p class="role__team">Meta</p>
+          <ul>
+            <li>Assess models' web security capabilities and design the tasks that measure them.</li>
+            <li>Discovered two new classes of model escape and built detection for escape attempts.</li>
+            <li>Find, triage and fix security issues in Muse, Meta's personal AI agent.</li>
+          </ul>
+        </li>
+        <li class="role">
+          <span class="role__when">Sep 2025 – May 2026</span>
+          <h3>Security Engineer, Central Security</h3>
+          <p class="role__team">Meta</p>
+          <ul>
+            <li>Shipped static analysis rules covering 10+ vulnerability classes.</li>
+            <li>Automated triage of 2,000 SAST findings, saving two weeks of engineering time.</li>
+            <li>Raised accuracy of AI analysis over SAST findings from 50% to 85% for targeted vulnerability classes.</li>
+          </ul>
+        </li>
+        <li class="role">
+          <span class="role__when">Dec 2023 – Sep 2025</span>
+          <h3>Penetration Tester</h3>
+          <p class="role__team">Confidencial.io</p>
+          <ul>
+            <li>Led the design of a fully automated internal security scanner, integrated into CI/CD.</li>
+            <li>Grew the security team from 1 to 3 and reported results to the CISO.</li>
+          </ul>
+        </li>
+        <li class="role">
+          <span class="role__when">2021 – 2025</span>
+          <h3>Bug bounty hunter</h3>
+          <p class="role__team">HackerOne</p>
+          <ul>
+            <li>Hunted across 52+ companies' programs, from Google and Amazon to GitHub and LinkedIn.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
 
-    <div class="job">
-      <div class="job-head"><strong>Confidencial.io — Penetration Tester</strong><span class="when">Dec 2023 – Sep 2025</span></div>
-      <ul>
-        <li>Led the design of a fully automated internal security scanner, integrated into CI/CD.</li>
-        <li>Grew the security team from 1 to 3 and reported results to the CISO.</li>
-      </ul>
-    </div>
-  </section>
+    <section class="block" aria-labelledby="rec-h">
+      <h2 id="rec-h">Recognition</h2>
+      <div>
+        <dl class="facts">
+          <div><dt>Top 400</dt><dd>on HackerOne, out of 1M+ researchers</dd></div>
+          <div><dt>2nd place</dt><dd>HackerOne World Cup</dd></div>
+          <div><dt>Pro Hacker</dt><dd>Hack The Box</dd></div>
+          <div><dt>eWPTXv2</dt><dd>Advanced web application penetration testing</dd></div>
+        </dl>
+        <p class="companies">Reported vulnerabilities to <strong>Google, Amazon, GitHub, Databricks, Adobe, Nintendo, LinkedIn, Reddit</strong> and <strong>Visa</strong>, among 52+ companies. B.Sc. in IT Security, with a thesis on combining SAST tools with LLMs.</p>
+      </div>
+    </section>
 
-  <section>
-    <h2>Highlights</h2>
-    <ul class="plain">
-      <li>2nd place, HackerOne World Cup</li>
-      <li>Top 400 on HackerOne</li>
-      <li>Vulnerabilities reported to Google, Amazon, GitHub, Databricks, Adobe, Nintendo, LinkedIn, Reddit, Visa and 40+ more</li>
-      <li>Hack The Box Pro Hacker &middot; eWPTXv2</li>
-      <li>B.Sc. in IT Security; thesis on combining SAST tools with LLMs</li>
-    </ul>
-  </section>
+    <section class="block" aria-labelledby="writing-h">
+      <h2 id="writing-h">Writing</h2>
+      <div>
+        <ul class="posts">
+          <li><a href="blog/post.html?slug=leaking-pii-at-scale"><span class="sev sev--high">High</span><span class="t">Leaking PII at scale through third-party misconfigurations</span><span class="date">Jan 2025</span></a></li>
+          <li><a href="blog/post.html?slug=exposing-hidden-dos-techniques"><span class="sev sev--high">High</span><span class="t">Exposing hidden DoS techniques lying in plain sight</span><span class="date">Nov 2024</span></a></li>
+          <li><a href="blog/post.html?slug=iis-welcome-page-to-lfi"><span class="sev sev--high">High</span><span class="t">IIS welcome page to source code review to LFI</span><span class="date">Aug 2024</span></a></li>
+          <li><a href="blog/post.html?slug=account-takeover-in-js-files-part2"><span class="sev sev--critical">Critical</span><span class="t">Account takeover hidden in JavaScript files, part 2</span><span class="date">Aug 2023</span></a></li>
+          <li><a href="blog/post.html?slug=account-takeover-in-js-files"><span class="sev sev--critical">Critical</span><span class="t">Account takeover hidden in JavaScript files</span><span class="date">Jul 2023</span></a></li>
+          <li><a href="blog/post.html?slug=idor-unpin-posts"><span class="sev sev--medium">Medium</span><span class="t">IDOR: unpinning any company's LinkedIn posts</span><span class="date">Jun 2023</span></a></li>
+        </ul>
+        <a class="all" href="blog/">All 8 write-ups</a>
+      </div>
+    </section>
 
-  <section>
-    <h2>Writing</h2>
-    <ul class="posts">
-      <li><a href="blog/post.html?slug=leaking-pii-at-scale">Leaking PII at Scale: How Third Parties Put Your Data at Risk</a><span class="date">Jan 2025</span></li>
-      <li><a href="blog/post.html?slug=exposing-hidden-dos-techniques">Exposing Hidden DoS Techniques Lying in Plain Sight</a><span class="date">Nov 2024</span></li>
-      <li><a href="blog/post.html?slug=iis-welcome-page-to-lfi">IIS Welcome Page to Source Code Review to LFI</a><span class="date">Aug 2024</span></li>
-      <li><a href="blog/post.html?slug=great-chain-of-duplicates">The Great Chain of Duplicates</a><span class="date">Nov 2023</span></li>
-      <li><a href="blog/post.html?slug=graphql-path-traversal-pii">GraphQL Path Traversal Leading to Disclosure of PII</a><span class="date">Nov 2023</span></li>
-    </ul>
-    <a class="more" href="blog/">All posts &rarr;</a>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>For security research, collaboration or disclosure: <a href="mailto:spaceboy20@wearehackerone.com">spaceboy20@wearehackerone.com</a></p>
-  </section>
+    <section class="block" id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h">Contact</h2>
+      <div>
+        <p class="contact-line"><a href="mailto:spaceboy20@wearehackerone.com">spaceboy20@wearehackerone.com</a></p>
+        <ul class="elsewhere">
+          <li><a href="https://www.linkedin.com/in/omarabdelrazek0/">LinkedIn</a></li>
+          <li><a href="https://github.com/ParsianNight">GitHub</a></li>
+          <li><a href="https://hackerone.com/spaceboy20">HackerOne</a></li>
+          <li><a href="https://x.com/spaceboy2O">X</a></li>
+          <li><a href="https://app.hackthebox.eu/profile/Spaceboy20">Hack The Box</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
   <footer>&copy; <span id="y">2026</span> Omar Abdelrazik</footer>
-</main>
+</div>
 <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
