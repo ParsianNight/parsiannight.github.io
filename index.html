@@ -1,520 +1,95 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Omar Abdelrazik — Security Engineer at Meta, Bug Bounty Hunter ranked #592 on HackerOne out of 1.1M+ hackers. 350+ vulnerabilities reported across LinkedIn, Reddit, Visa, GitHub, and more.">
-  <meta name="keywords" content="penetration testing, bug bounty, cybersecurity, security researcher, ethical hacking, Omar Abdelrazik">
-  <meta name="author" content="Omar Abdelrazik">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Omar Abdelrazik — Security Researcher & Content Creator">
-  <meta property="og:description" content="Security Engineer at Meta. Bug Bounty Hunter ranked #592 out of 1.1M+ on HackerOne. 350+ vulnerabilities reported.">
+  <title>Omar Abdelrazik — Security Engineer</title>
+  <meta name="description" content="Omar Abdelrazik — Security Engineer at Meta working on AI security and static analysis. Top 400 on HackerOne, 250+ valid vulnerabilities across 52+ companies.">
+  <meta property="og:title" content="Omar Abdelrazik — Security Engineer">
+  <meta property="og:description" content="Security Engineer at Meta. Offensive security, AI security and static analysis. Top 400 on HackerOne.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://parsiannight.github.io">
-  <meta property="og:image" content="assets/img/og-image.png">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Omar Abdelrazik — Security Researcher & Content Creator">
-  <meta name="twitter:description" content="Penetration Tester, Bug Bounty Hunter, and Cybersecurity Content Creator.">
-
-  <title>Omar Abdelrazik — Security Researcher & Content Creator</title>
-
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animations.css">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
+<main class="wrap">
 
-  <!-- ===================== NAVIGATION ===================== -->
-  <header class="nav-header" id="nav-header">
-    <nav class="nav" aria-label="Primary navigation">
-      <a href="#hero" class="nav__logo" aria-label="Home">
-        <span class="nav__logo-bracket">[</span><span class="nav__logo-text">OA</span><span class="nav__logo-bracket">]</span>
-      </a>
-
-      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span class="nav__toggle-bar"></span>
-        <span class="nav__toggle-bar"></span>
-        <span class="nav__toggle-bar"></span>
-      </button>
-
-      <ul class="nav__menu" id="nav-menu" role="menubar">
-        <li role="none"><a href="#about" class="nav__link" role="menuitem">About</a></li>
-        <li role="none"><a href="#stats" class="nav__link" role="menuitem">Stats</a></li>
-        <li role="none"><a href="#hall-of-fame" class="nav__link" role="menuitem">Hall of Fame</a></li>
-        <li role="none"><a href="#blog" class="nav__link" role="menuitem">Blog</a></li>
-        <li role="none"><a href="#skills" class="nav__link" role="menuitem">Skills</a></li>
-        <li role="none"><a href="#contact" class="nav__link" role="menuitem">Contact</a></li>
-      </ul>
-
-      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">
-        <svg class="theme-toggle__icon theme-toggle__icon--moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        <svg class="theme-toggle__icon theme-toggle__icon--sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-      </button>
-    </nav>
+  <header class="intro">
+    <h1>Omar Abdelrazik</h1>
+    <p class="role">Security Engineer at Meta &middot; London</p>
+    <p>I break things to make them safer. At Meta I lead a pod of 9 engineers assessing what AI models can do in web security, and before that I built static analysis and AI-assisted triage in Central Security.</p>
+    <p>I started out in bug bounty: 250+ valid vulnerabilities across 52+ companies, a top-400 rank on HackerOne, and 2nd place in the HackerOne World Cup.</p>
+    <div class="links">
+      <a href="assets/Omar_Abdelrazik_CV.pdf">CV</a>
+      <a href="https://www.linkedin.com/in/omarabdelrazek0/">LinkedIn</a>
+      <a href="https://github.com/ParsianNight">GitHub</a>
+      <a href="https://hackerone.com/spaceboy20">HackerOne</a>
+      <a href="https://x.com/spaceboy2O">X</a>
+      <a href="blog/">Blog</a>
+    </div>
   </header>
 
-  <!-- ===================== HERO ===================== -->
-  <section class="hero" id="hero">
-    <div class="hero__content">
-      <h1 class="hero__name">Omar Abdelrazik</h1>
-      <p class="hero__handle">@Spaceboy20</p>
-      <p class="hero__role">Security Engineer &middot; Bug Bounty Hunter</p>
-      <p class="hero__tagline">Making systems safer, one vulnerability at a time.<br>Sharing what I learn along the way.</p>
-      <div class="hero__cta">
-        <a href="#blog" class="btn btn--primary">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-          Blog
-        </a>
-        <a href="#contact" class="btn btn--secondary">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          Contact
-        </a>
-      </div>
+  <section>
+    <h2>Experience</h2>
+
+    <div class="job">
+      <div class="job-head"><strong>Meta — Web Pod Lead, Applied AI</strong><span class="when">May 2026 – now</span></div>
+      <ul>
+        <li>Lead a 9-engineer pod assessing models' web security capabilities and designing the tasks that measure them.</li>
+        <li>Discovered two new classes of model escape and built detection for escape attempts.</li>
+        <li>Find, triage and fix security issues in Muse, Meta's personal AI agent.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head"><strong>Meta — Security Engineer, Central Security</strong><span class="when">Sep 2025 – May 2026</span></div>
+      <ul>
+        <li>Shipped static analysis rules covering 10+ vulnerability classes.</li>
+        <li>Automated triage of 2,000 SAST findings, saving two weeks of engineering time.</li>
+        <li>Raised accuracy of AI analysis over SAST findings from 50% to 85% for targeted vulnerability classes.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head"><strong>Confidencial.io — Penetration Tester</strong><span class="when">Dec 2023 – Sep 2025</span></div>
+      <ul>
+        <li>Led the design of a fully automated internal security scanner, integrated into CI/CD.</li>
+        <li>Grew the security team from 1 to 3 and reported results to the CISO.</li>
+      </ul>
     </div>
   </section>
 
-  <!-- ===================== ABOUT ===================== -->
-  <section class="section about" id="about">
-    <div class="container">
-      <div class="section__header reveal">
-        <span class="section__label">Background</span>
-        <h2 class="section__title">About Me</h2>
-      </div>
-      <div class="about__grid">
-        <div class="about__text reveal">
-          <p>I got into security because I was curious about how things break. That curiosity turned into a career, and now at <strong>Meta</strong>, I help secure one of the world's largest platforms. Certified <strong>eWPTXv2</strong> and ranked <strong>Pro Hacker</strong> on Hack The Box.</p>
-          <p>Outside of work, I spend my time hunting bugs and sharing what I learn. I'm also working on agentic AI and security solutions, building tools that use AI to make security testing smarter. I believe the best way to get better is to stay hands-on, breaking things, writing about it, and helping others do the same.</p>
-          <p>I find the most interesting bugs by going deeper than the surface level. If you're into security research or just getting started, I hope something here helps you on your journey.</p>
-        </div>
-        <div class="about__links reveal">
-          <a href="https://www.linkedin.com/in/omarabdelrazek0/" target="_blank" rel="noopener noreferrer" class="about__link-card">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            <div>
-              <strong>LinkedIn</strong>
-              <span>Professional Network</span>
-            </div>
-          </a>
-          <a href="https://app.hackthebox.eu/profile/Spaceboy20" target="_blank" rel="noopener noreferrer" class="about__link-card">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M11.996 0a1.119 1.119 0 00-.057.003 1.174 1.174 0 00-.577.2L1.822 5.986a1.193 1.193 0 00-.567 1.02v10.04c0 .425.224.816.59 1.027l9.553 5.744a1.174 1.174 0 001.208 0l9.54-5.744a1.187 1.187 0 00.59-1.026V7.006c0-.424-.224-.816-.59-1.027L12.63.2A1.174 1.174 0 0011.996 0zm.004 2.4l7.2 4.33v3.066l-3.2-1.924v3.848L12 14.4l-4-2.68V7.872L4.8 9.796V6.73l7.2-4.33zm4 7.624v3.848l-4 2.68-4-2.68v-3.848l4 2.4 4-2.4zm-4 7.176l3.2 1.924-3.2 1.924-3.2-1.924 3.2-1.924z"/></svg>
-            <div>
-              <strong>Hack The Box</strong>
-              <span>Pro Hacker Rank</span>
-            </div>
-          </a>
-          <a href="https://hackerone.com/spaceboy20" target="_blank" rel="noopener noreferrer" class="about__link-card">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M4.04 13.06c0-.83.13-1.62.37-2.37l3.08 1.78c0 .2-.02.39-.02.59 0 2.58 1.53 4.81 3.74 5.84l-1.54 2.67c-3.17-1.35-5.63-4.4-5.63-8.51zm11.56-7.1l1.54-2.67A11.94 11.94 0 0012.04 1C7.34 1 3.31 3.82 1.67 7.82l1.54 2.67A8.92 8.92 0 0112.04 4c1.27 0 2.47.27 3.56.96zm6.34 7.1c0 4.11-2.46 7.16-5.63 8.51l-1.54-2.67a6.06 6.06 0 003.74-5.84c0-.2-.02-.39-.02-.59l3.08-1.78c.24.75.37 1.54.37 2.37zM12.04 8a5.06 5.06 0 100 10.12A5.06 5.06 0 0012.04 8z"/></svg>
-            <div>
-              <strong>HackerOne</strong>
-              <span>@spaceboy20</span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
+  <section>
+    <h2>Highlights</h2>
+    <ul class="plain">
+      <li>2nd place, HackerOne World Cup</li>
+      <li>Top 400 on HackerOne; top 3 on 7 programs</li>
+      <li>Vulnerabilities reported to Google, Amazon, GitHub, Databricks, Adobe, Nintendo, LinkedIn, Reddit, Visa and 40+ more</li>
+      <li>Hack The Box Pro Hacker &middot; eWPTXv2</li>
+      <li>B.Sc. IT Security, German International University; thesis on combining SAST tools with LLMs</li>
+    </ul>
   </section>
 
-  <!-- ===================== STATS ===================== -->
-  <section class="section stats" id="stats">
-    <div class="container">
-      <div class="section__header reveal">
-        <span class="section__label">Achievements</span>
-        <h2 class="section__title">By The Numbers</h2>
-      </div>
-      <div class="stats__grid">
-        <div class="stats__card reveal">
-          <div class="stats__icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="9" y1="12" x2="15" y2="12"/></svg>
-          </div>
-          <span class="stats__number counter" data-target="350" data-suffix="+">0</span>
-          <span class="stats__label">Vulnerabilities Reported</span>
-        </div>
-        <div class="stats__card reveal">
-          <div class="stats__icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-          </div>
-          <span class="stats__number">#<span class="counter" data-target="592" data-suffix="">0</span></span>
-          <span class="stats__label">HackerOne Global Rank (out of 1.1M+)</span>
-        </div>
-        <div class="stats__card reveal">
-          <div class="stats__icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </div>
-          <span class="stats__number counter" data-target="4379" data-suffix="">0</span>
-          <span class="stats__label">HackerOne Reputation</span>
-        </div>
-        <div class="stats__card reveal">
-          <div class="stats__icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-          </div>
-          <span class="stats__number counter" data-target="372" data-suffix="+">0</span>
-          <span class="stats__label">HackerOne Reports</span>
-        </div>
-        <div class="stats__card reveal">
-          <div class="stats__icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          </div>
-          <span class="stats__number counter" data-target="26" data-suffix="">0</span>
-          <span class="stats__label">Programs Targeted</span>
-        </div>
-        <div class="stats__card reveal">
-          <div class="stats__icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </div>
-          <span class="stats__number">Pro Hacker</span>
-          <span class="stats__label">Hack The Box Rank</span>
-        </div>
-      </div>
-    </div>
+  <section>
+    <h2>Writing</h2>
+    <ul class="posts">
+      <li><a href="blog/post.html?slug=leaking-pii-at-scale">Leaking PII at Scale: How Third Parties Put Your Data at Risk</a><span class="date">Jan 2025</span></li>
+      <li><a href="blog/post.html?slug=exposing-hidden-dos-techniques">Exposing Hidden DoS Techniques Lying in Plain Sight</a><span class="date">Nov 2024</span></li>
+      <li><a href="blog/post.html?slug=iis-welcome-page-to-lfi">IIS Welcome Page to Source Code Review to LFI</a><span class="date">Aug 2024</span></li>
+      <li><a href="blog/post.html?slug=great-chain-of-duplicates">The Great Chain of Duplicates</a><span class="date">Nov 2023</span></li>
+      <li><a href="blog/post.html?slug=graphql-path-traversal-pii">GraphQL Path Traversal Leading to Disclosure of PII</a><span class="date">Nov 2023</span></li>
+    </ul>
+    <a class="more" href="blog/">All posts &rarr;</a>
   </section>
 
-  <!-- ===================== HALL OF FAME ===================== -->
-  <section class="section hall-of-fame" id="hall-of-fame">
-    <div class="container">
-      <div class="section__header reveal">
-        <span class="section__label">Recognition</span>
-        <h2 class="section__title">Hall of Fame</h2>
-      </div>
-      <div class="marquee reveal">
-        <div class="marquee__track">
-          <div class="marquee__items">
-            <span class="marquee__item">LinkedIn</span>
-            <span class="marquee__item">GitHub</span>
-            <span class="marquee__item">Reddit</span>
-            <span class="marquee__item">Visa</span>
-            <span class="marquee__item">Remitly</span>
-            <span class="marquee__item">MTN Group</span>
-            <span class="marquee__item">Glovo</span>
-            <span class="marquee__item">Sega</span>
-            <span class="marquee__item">Domino's</span>
-            <span class="marquee__item">Shutterfly</span>
-          </div>
-          <div class="marquee__items" aria-hidden="true">
-            <span class="marquee__item">LinkedIn</span>
-            <span class="marquee__item">GitHub</span>
-            <span class="marquee__item">Reddit</span>
-            <span class="marquee__item">Visa</span>
-            <span class="marquee__item">Remitly</span>
-            <span class="marquee__item">MTN Group</span>
-            <span class="marquee__item">Glovo</span>
-            <span class="marquee__item">Sega</span>
-            <span class="marquee__item">Domino's</span>
-            <span class="marquee__item">Shutterfly</span>
-          </div>
-        </div>
-      </div>
-    </div>
+  <section>
+    <h2>Contact</h2>
+    <p>For security research, collaboration or disclosure: <a href="mailto:spaceboy20@wearehackerone.com">spaceboy20@wearehackerone.com</a></p>
   </section>
 
-  <!-- ===================== BLOG ===================== -->
-  <section class="section writeups" id="blog">
-    <div class="container">
-      <div class="section__header reveal">
-        <span class="section__label">Research</span>
-        <h2 class="section__title">Blog</h2>
-        <p class="section__subtitle">Write-ups, techniques, and lessons from the field</p>
-      </div>
-      <div class="writeups__grid" id="writings-grid">
-        <a href="blog/post.html?slug=leaking-pii-at-scale">
-        <article class="writeup-card reveal">
-          <div class="writeup-card__header">
-            <span class="writeup-card__severity writeup-card__severity--high">High</span>
-            <span class="writeup-card__category">Data Exposure</span>
-          </div>
-          <h3 class="writeup-card__title">Leaking PII at Scale: Third-Party Misconfigurations</h3>
-          <p class="writeup-card__excerpt">Discovered how third-party integrations can unintentionally expose personally identifiable information at scale through misconfigurations.</p>
-          <div class="writeup-card__tags">
-            <span class="tag">PII Leakage</span>
-            <span class="tag">Third-Party Risk</span>
-            <span class="tag">Misconfiguration</span>
-          </div>
-          <div class="writeup-card__footer">
-            <span class="writeup-card__date">Jan 17, 2025</span>
-            <span class="writeup-card__link">Read <span aria-hidden="true">&rarr;</span></span>
-          </div>
-        </article>
-        </a>
-        <a href="blog/post.html?slug=exposing-hidden-dos-techniques">
-        <article class="writeup-card reveal">
-          <div class="writeup-card__header">
-            <span class="writeup-card__severity writeup-card__severity--high">High</span>
-            <span class="writeup-card__category">Denial of Service</span>
-          </div>
-          <h3 class="writeup-card__title">Exposing Hidden DOS Techniques Laying in Plain Sight</h3>
-          <p class="writeup-card__excerpt">Uncovering denial-of-service attack vectors hiding in everyday application functionality that most security testers overlook.</p>
-          <div class="writeup-card__tags">
-            <span class="tag">DoS</span>
-            <span class="tag">Application Logic</span>
-            <span class="tag">Hidden Vectors</span>
-          </div>
-          <div class="writeup-card__footer">
-            <span class="writeup-card__date">Nov 7, 2024</span>
-            <span class="writeup-card__link">Read <span aria-hidden="true">&rarr;</span></span>
-          </div>
-        </article>
-        </a>
-        <a href="blog/post.html?slug=iis-welcome-page-to-lfi">
-        <article class="writeup-card reveal">
-          <div class="writeup-card__header">
-            <span class="writeup-card__severity writeup-card__severity--high">High</span>
-            <span class="writeup-card__category">Web Application</span>
-          </div>
-          <h3 class="writeup-card__title">IIS Welcome Page to Source Code Review to LFI</h3>
-          <p class="writeup-card__excerpt">How a default IIS welcome page led to source code review and ultimately a Local File Inclusion vulnerability.</p>
-          <div class="writeup-card__tags">
-            <span class="tag">IIS</span>
-            <span class="tag">Source Code Review</span>
-            <span class="tag">LFI</span>
-          </div>
-          <div class="writeup-card__footer">
-            <span class="writeup-card__date">Aug 31, 2024</span>
-            <span class="writeup-card__link">Read <span aria-hidden="true">&rarr;</span></span>
-          </div>
-        </article>
-        </a>
-        <a href="blog/post.html?slug=great-chain-of-duplicates">
-        <article class="writeup-card reveal">
-          <div class="writeup-card__header">
-            <span class="writeup-card__severity writeup-card__severity--high">High</span>
-            <span class="writeup-card__category">JavaScript Analysis</span>
-          </div>
-          <h3 class="writeup-card__title">The Great Chain of Duplicates: Utilizing JS and Logic in Bug Bounty</h3>
-          <p class="writeup-card__excerpt">Leveraging JavaScript analysis and logical thinking to chain vulnerabilities and dump 500K PII records.</p>
-          <div class="writeup-card__tags">
-            <span class="tag">JavaScript</span>
-            <span class="tag">Vulnerability Chaining</span>
-            <span class="tag">Logic Bugs</span>
-          </div>
-          <div class="writeup-card__footer">
-            <span class="writeup-card__date">Nov 4, 2023</span>
-            <span class="writeup-card__link">Read <span aria-hidden="true">&rarr;</span></span>
-          </div>
-        </article>
-        </a>
-        <a href="blog/post.html?slug=graphql-path-traversal-pii">
-        <article class="writeup-card reveal">
-          <div class="writeup-card__header">
-            <span class="writeup-card__severity writeup-card__severity--high">High</span>
-            <span class="writeup-card__category">API Security</span>
-          </div>
-          <h3 class="writeup-card__title">GraphQL Path Traversal Leading to Disclosure of PII</h3>
-          <p class="writeup-card__excerpt">Discovered a path traversal in a GraphQL endpoint that allowed access to restricted internal APIs and exposure of PII.</p>
-          <div class="writeup-card__tags">
-            <span class="tag">GraphQL</span>
-            <span class="tag">Path Traversal</span>
-            <span class="tag">PII Disclosure</span>
-          </div>
-          <div class="writeup-card__footer">
-            <span class="writeup-card__date">Nov 4, 2023</span>
-            <span class="writeup-card__link">Read <span aria-hidden="true">&rarr;</span></span>
-          </div>
-        </article>
-        </a>
-        <a href="blog/post.html?slug=account-takeover-in-js-files-part2">
-        <article class="writeup-card reveal">
-          <div class="writeup-card__header">
-            <span class="writeup-card__severity writeup-card__severity--critical">Critical</span>
-            <span class="writeup-card__category">Account Takeover</span>
-          </div>
-          <h3 class="writeup-card__title">Account Takeover Hidden in JS Files + Extra Work</h3>
-          <p class="writeup-card__excerpt">A follow-up collaboration diving deeper, leaking user IDs to grab reset tokens and take over any account using email only.</p>
-          <div class="writeup-card__tags">
-            <span class="tag">Account Takeover</span>
-            <span class="tag">Broken Access Control</span>
-            <span class="tag">JavaScript</span>
-          </div>
-          <div class="writeup-card__footer">
-            <span class="writeup-card__date">Aug 29, 2023</span>
-            <span class="writeup-card__link">Read <span aria-hidden="true">&rarr;</span></span>
-          </div>
-        </article>
-        </a>
-        <a href="blog/post.html?slug=account-takeover-in-js-files">
-        <article class="writeup-card reveal">
-          <div class="writeup-card__header">
-            <span class="writeup-card__severity writeup-card__severity--critical">Critical</span>
-            <span class="writeup-card__category">Web Application</span>
-          </div>
-          <h3 class="writeup-card__title">Account Takeover Hidden in JavaScript Files</h3>
-          <p class="writeup-card__excerpt">Found a broken access control vulnerability hidden within JavaScript files that enabled full account takeover of any user.</p>
-          <div class="writeup-card__tags">
-            <span class="tag">Account Takeover</span>
-            <span class="tag">Broken Access Control</span>
-            <span class="tag">JavaScript Analysis</span>
-          </div>
-          <div class="writeup-card__footer">
-            <span class="writeup-card__date">Jul 4, 2023</span>
-            <span class="writeup-card__link">Read <span aria-hidden="true">&rarr;</span></span>
-          </div>
-        </article>
-        </a>
-        <a href="blog/post.html?slug=idor-unpin-posts">
-        <article class="writeup-card reveal">
-          <div class="writeup-card__header">
-            <span class="writeup-card__severity writeup-card__severity--medium">Medium</span>
-            <span class="writeup-card__category">Bug Bounty</span>
-          </div>
-          <h3 class="writeup-card__title">IDOR: Unpin Posts for Fun</h3>
-          <p class="writeup-card__excerpt">Exploited an Insecure Direct Object Reference on LinkedIn that allowed unpinning any user's posts without authorization.</p>
-          <div class="writeup-card__tags">
-            <span class="tag">IDOR</span>
-            <span class="tag">LinkedIn</span>
-            <span class="tag">Authorization Bypass</span>
-          </div>
-          <div class="writeup-card__footer">
-            <span class="writeup-card__date">Jun 13, 2023</span>
-            <span class="writeup-card__link">Read <span aria-hidden="true">&rarr;</span></span>
-          </div>
-        </article>
-        </a>
-      </div>
-      <div style="text-align: center; margin-top: 2.5rem;" class="reveal">
-        <a href="blog/" class="btn btn--secondary">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-          View All Posts
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== SKILLS ===================== -->
-  <section class="section skills" id="skills">
-    <div class="container">
-      <div class="section__header reveal">
-        <span class="section__label">Expertise</span>
-        <h2 class="section__title">What I Do</h2>
-      </div>
-      <div class="about__grid" style="grid-template-columns: 1fr;">
-        <div class="about__text reveal" style="max-width: 760px; margin: 0 auto;">
-          <p>I do web application security testing across the board. White box, black box, doesn't matter. I review source code, break into applications, test APIs, and poke at mobile apps. I've done threat modeling for teams that needed to understand where their real risks are, not just check a compliance box.</p>
-          <p>I also work with security teams to build their automation and tooling, and I help software engineers think about security early in the development process instead of bolting it on after the fact. On the offensive side, I do penetration testing on web apps, networks, and mobile. I'm always picking up something new because this field doesn't sit still and neither do I.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== CURRENTLY ===================== -->
-  <section class="section" id="currently">
-    <div class="container">
-      <div class="section__header reveal">
-        <span class="section__label">Now</span>
-        <h2 class="section__title">Currently Working On</h2>
-      </div>
-      <div class="about__grid" style="grid-template-columns: 1fr;">
-        <div class="about__text reveal" style="max-width: 760px; margin: 0 auto;">
-          <p>Most scanners catch the obvious stuff. The bugs that actually matter, the ones that chain together, the logic issues, the stuff that needs context, that still takes a person sitting there thinking through it. I got tired of that bottleneck.</p>
-          <p>So I'm building <strong>agentic AI for offensive security</strong>. Agents that look at recon data, read the app, figure out what's worth testing, and actually go test it. Not just throwing payloads at parameters but actually reasoning about the target the way you or I would. The end game is making that level of security testing something that doesn't require a human in the loop every single time.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== CONTACT ===================== -->
-  <section class="section contact" id="contact">
-    <div class="container">
-      <div class="section__header reveal">
-        <span class="section__label">Contact</span>
-        <h2 class="section__title">Get In Touch</h2>
-        <p class="section__subtitle">Have a project, question, or just want to connect? Reach out.</p>
-      </div>
-      <div class="contact__grid">
-        <form class="contact__form reveal" id="contact-form" action="https://formsubmit.co/spaceboy20@wearehackerone.com" method="POST">
-          <input type="hidden" name="_subject" value="New message from portfolio">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://parsiannight.github.io/?sent=true">
-          <input type="text" name="_honey" style="display:none">
-          <div class="form-group">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required autocomplete="name">
-          </div>
-          <div class="form-group">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required autocomplete="email">
-          </div>
-          <div class="form-group">
-            <label for="subject" class="form-label">Subject</label>
-            <input type="text" id="subject" name="subject" class="form-input" placeholder="Bug Bounty Collaboration" required>
-          </div>
-          <div class="form-group">
-            <label for="message" class="form-label">Message</label>
-            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Your message..." rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn btn--primary btn--full">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-            Send Message
-          </button>
-          <div class="form-status" id="form-status" aria-live="polite"></div>
-        </form>
-        <div class="contact__info reveal">
-          <div class="contact__info-card">
-            <h3>Let's Connect</h3>
-            <p>I'm always open to discussing security research, content collaboration, bug bounty tips, or career advice in cybersecurity.</p>
-          </div>
-          <div class="contact__socials">
-            <a href="https://www.linkedin.com/in/omarabdelrazek0/" target="_blank" rel="noopener noreferrer" class="contact__social" aria-label="LinkedIn">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            </a>
-            <a href="https://github.com/ParsianNight" target="_blank" rel="noopener noreferrer" class="contact__social" aria-label="GitHub">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576A12.01 12.01 0 0 0 24 12c0-6.627-5.373-12-12-12z"/></svg>
-            </a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="contact__social" aria-label="YouTube">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/><polygon fill="var(--bg-primary)" points="9.545 15.568 15.818 12 9.545 8.432"/></svg>
-            </a>
-            <a href="https://x.com/spaceboy2O" target="_blank" rel="noopener noreferrer" class="contact__social" aria-label="Twitter / X">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-            </a>
-            <a href="https://medium.com/@omarahmed_13016" target="_blank" rel="noopener noreferrer" class="contact__social" aria-label="Medium Blog">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
-            </a>
-            <a href="https://hackerone.com/spaceboy20" target="_blank" rel="noopener noreferrer" class="contact__social" aria-label="HackerOne">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M4.04 13.06c0-.83.13-1.62.37-2.37l3.08 1.78c0 .2-.02.39-.02.59 0 2.58 1.53 4.81 3.74 5.84l-1.54 2.67c-3.17-1.35-5.63-4.4-5.63-8.51zm11.56-7.1l1.54-2.67A11.94 11.94 0 0012.04 1C7.34 1 3.31 3.82 1.67 7.82l1.54 2.67A8.92 8.92 0 0112.04 4c1.27 0 2.47.27 3.56.96zm6.34 7.1c0 4.11-2.46 7.16-5.63 8.51l-1.54-2.67a6.06 6.06 0 003.74-5.84c0-.2-.02-.39-.02-.59l3.08-1.78c.24.75.37 1.54.37 2.37zM12.04 8a5.06 5.06 0 100 10.12A5.06 5.06 0 0012.04 8z"/></svg>
-            </a>
-          </div>
-          <div class="contact__info-card">
-            <h3>Secure Contact</h3>
-            <p>Reach me at <a href="mailto:spaceboy20@wearehackerone.com">spaceboy20@wearehackerone.com</a> for security research inquiries, collaboration, or responsible disclosure.</p>
-          </div>
-          <a href="assets/Omar_Abdelrazik_CV.pdf" target="_blank" class="btn btn--outline" style="width: 100%; justify-content: center;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download CV
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== FOOTER ===================== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__content">
-        <div class="footer__brand">
-          <a href="#hero" class="nav__logo" aria-label="Home">
-            <span class="nav__logo-bracket">[</span><span class="nav__logo-text">OA</span><span class="nav__logo-bracket">]</span>
-          </a>
-          <p class="footer__tagline">Security Researcher & Content Creator</p>
-        </div>
-        <div class="footer__links">
-          <a href="#about">About</a>
-          <a href="#stats">Stats</a>
-          <a href="#hall-of-fame">Hall of Fame</a>
-          <a href="#blog">Blog</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="footer__bottom">
-          <p>&copy; <span id="current-year"></span> Omar Abdelrazik. All rights reserved.</p>
-          <p class="footer__built">Built with <span class="footer__heart" aria-label="passion">&lt;3</span> and too much caffeine.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
+  <footer>&copy; <span id="y">2026</span> Omar Abdelrazik</footer>
+</main>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>

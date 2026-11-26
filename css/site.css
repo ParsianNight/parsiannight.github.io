@@ -1,0 +1,105 @@
+/* Simple, single stylesheet for the whole site. Light/dark follows the OS. */
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --muted: #666666;
+  --line: #e6e6e6;
+  --accent: #0a66c2;
+  --code-bg: #f5f5f5;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111213;
+    --text: #e8e8e8;
+    --muted: #9a9a9a;
+    --line: #2a2b2d;
+    --accent: #6cb4ff;
+    --code-bg: #1c1d1f;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+}
+.wrap { max-width: 680px; margin: 0 auto; padding: 3.5rem 1.25rem 4rem; }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Top bar on inner pages */
+.topbar { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2.5rem; font-size: .95rem; }
+.topbar .home { color: var(--text); font-weight: 600; }
+.topbar nav a { margin-left: 1rem; color: var(--muted); }
+
+/* Intro */
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .35rem; letter-spacing: -.01em; }
+.role { color: var(--muted); margin: 0 0 1.25rem; }
+.intro p { margin: 0 0 1rem; }
+.links { display: flex; flex-wrap: wrap; gap: .35rem 1.1rem; margin-top: 1.25rem; font-size: .95rem; }
+
+/* Sections */
+section { margin-top: 3rem; }
+section > h2 {
+  font-size: .8rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--muted); margin: 0 0 1.1rem; padding-bottom: .5rem; border-bottom: 1px solid var(--line);
+}
+
+/* Experience */
+.job { margin-bottom: 1.6rem; }
+.job-head { display: flex; justify-content: space-between; gap: 0 1rem; flex-wrap: wrap; }
+.job-head strong { font-weight: 600; }
+.when { color: var(--muted); font-size: .9rem; white-space: nowrap; }
+.job ul, .plain { margin: .4rem 0 0; padding-left: 1.1rem; }
+.job li, .plain li { margin: .25rem 0; }
+
+/* Post lists (home + blog index) */
+.posts { list-style: none; margin: 0; padding: 0; }
+.posts li { display: flex; justify-content: space-between; gap: 1rem; padding: .45rem 0; }
+.posts .date { color: var(--muted); font-size: .9rem; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.more { display: inline-block; margin-top: .75rem; font-size: .95rem; }
+
+/* Blog index (cards rendered by js/blog.js, styled as a plain list) */
+#blog-grid { display: block; }
+.blog-card { display: block; padding: 1rem 0; border-bottom: 1px solid var(--line); color: var(--text); }
+.blog-card:hover { text-decoration: none; }
+.blog-card:hover .blog-card__title { color: var(--accent); }
+.blog-card__category { display: none; }
+.blog-card__title { font-size: 1.05rem; font-weight: 600; margin: 0 0 .25rem; }
+.blog-card__excerpt { margin: 0 0 .35rem; color: var(--muted); font-size: .95rem; }
+.blog-card__meta { display: flex; justify-content: space-between; color: var(--muted); font-size: .85rem; }
+.blog-card__source { margin-left: .3rem; }
+
+/* Single post (rendered by js/blog-post.js) */
+.blog-article__category, .blog-article__loading { color: var(--muted); font-size: .9rem; }
+.blog-article__title { font-size: 1.75rem; line-height: 1.25; margin: .3rem 0 .5rem; }
+.blog-article__meta { color: var(--muted); font-size: .9rem; display: flex; gap: 1rem; }
+.blog-article__tags { margin: .6rem 0 2rem; display: flex; flex-wrap: wrap; gap: .4rem; }
+.blog-article__tag { font-size: .8rem; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: .05rem .6rem; }
+.blog-article__body h2 { font-size: 1.3rem; text-transform: none; letter-spacing: 0; color: var(--text); border: 0; padding: 0; margin: 2rem 0 .75rem; }
+.blog-article__body h3 { font-size: 1.1rem; margin: 1.5rem 0 .5rem; }
+.blog-article__body img { max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; margin: .5rem 0; }
+.blog-article__body code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .88em; background: var(--code-bg); padding: .1em .35em; border-radius: 4px; }
+.blog-article__body pre { background: var(--code-bg); padding: 1rem; border-radius: 6px; overflow-x: auto; }
+.blog-article__body pre code { background: none; padding: 0; }
+.blog-article__body blockquote { margin: 1rem 0; padding-left: 1rem; border-left: 3px solid var(--line); color: var(--muted); }
+.blog-post-nav { display: none; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+.blog-post-nav__link { display: flex; flex-direction: column; font-size: .95rem; }
+.blog-post-nav__next { text-align: right; }
+.blog-post-nav__label { color: var(--muted); font-size: .85rem; }
+
+footer { margin-top: 4rem; color: var(--muted); font-size: .85rem; }
+
+@media (max-width: 520px) {
+  .wrap { padding-top: 2.25rem; }
+  h1 { font-size: 1.7rem; }
+  .posts li { flex-direction: column; gap: 0; }
+}
+
+/* Posts repeat their title as the first heading in the markdown; the page header already shows it */
+.blog-article__body > h1:first-child { display: none; }
